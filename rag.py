@@ -113,21 +113,10 @@ Rules:
 Context:
 {context}"""
 
+    llm = get_llm(model="gemini-1.5-flash")
     try:
-        response = None
-        for model_candidate in ["gemini-1.5-flash", "gemini-3.6-flash"]:
-            try:
-                candidate_llm = get_llm(model=model_candidate)
-                response = candidate_llm.invoke(prompt)
-                break
-            except Exception as e:
-                if any(err in str(e) for err in ["NOT_FOUND", "404", "503", "UNAVAILABLE"]):
-                    continue
-                raise e
+        response = llm.invoke(prompt)
 
-        if response is None:
-            candidate_llm = get_llm(model="gemini-3.6-flash")
-            response = candidate_llm.invoke(prompt)
 
 
         content = response.content

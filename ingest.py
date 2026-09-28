@@ -15,9 +15,9 @@ class GoogleGenAIEmbeddingFunction(EmbeddingFunction[Documents]):
     """Embedding function adapter for ChromaDB using LangChain's GoogleGenerativeAIEmbeddings."""
 
     def __init__(self, model: str = "models/embedding-001"):
-        # Map deprecated models/embedding-001 to models/gemini-embedding-001 to prevent 404 and rate limit exhaustion
-        self.model = "models/gemini-embedding-001" if model == "models/embedding-001" else model
+        self.model = model
         self.embeddings = GoogleGenerativeAIEmbeddings(model=self.model)
+
 
     def __call__(self, input: Documents) -> Embeddings:
         import time

@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+chroma_db/
+data/uploaded_file.*
+.DS_Store

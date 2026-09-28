@@ -1,0 +1,49 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 766 >>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+16 TL
+(Executive Meeting Minutes - Project Kickoff) '
+(Date: October 10, 2026) '
+(Attendees: Alice Smith, Bob Johnson, Charlie Brown, Diana Prince) '
+T*
+(Summary of Discussion:) '
+(The team discussed the launch of the new customer feedback analysis pipeline and prioritized action items.) '
+(Infrastructure readiness was reviewed by Bob.) '
+T*
+(Action Items:) '
+(1. Alice: Finalize the requirements specification and circulate to stakeholders by Friday.) '
+(2. Bob: Set up the production ChromaDB vector store instance and configure API access keys.) '
+(3. Charlie: Prepare integration test cases for PDF, DOCX, and TXT document ingestion.) '
+(4. Diana: Conduct security review on the environment variable storage and secrets management.) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001058 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1128
+%%EOF
